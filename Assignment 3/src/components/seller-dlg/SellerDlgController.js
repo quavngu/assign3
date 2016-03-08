@@ -8,7 +8,7 @@ function SellerDlgController($scope) {
 		imagePath: 	""
 	};
 
-	$scope.onOk = function onOK() {
+	$scope.onOk = function onOk() {
 		// TODO: validation
 		if($scope.seller.name.length === 0) {
 			// Birta validation skilaboð

@@ -6,17 +6,28 @@
 		<thead>
 			<tr>
 				<th>
+					<span translate="sellers.Image"></span>
+				</th>
+				<th>
 					<span translate="sellers.Name"></span>
 				</th>
 				<th>
 					<span translate="sellers.Category"></span	>
 				</th>
+				<th>
+				</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr ng-repeat="s in sellers">
+				<td><img src="{{s.imagePath}}" alt="Image" height="42" width="42"></td>
 				<td>{{s.name}}</td>
 				<td>{{s.category}}</td>
+				<td>
+					<button class="btn btn-primary" ng-click="onEditSeller(s)" ng-model="selectedUser">
+						<span translate="sellers.Edit"></span>
+					</button>
+				</td>
 			</tr>
 		</tbody>
 	</table>

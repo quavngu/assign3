@@ -224,7 +224,7 @@ function SellerDlgController($scope) {
 		imagePath: 	""
 	};
 
-	$scope.onOk = function onOK() {
+	$scope.onOk = function onOk() {
 		// TODO: validation
 		if($scope.seller.name.length === 0) {
 			// Birta validation skilaboð
@@ -241,7 +241,7 @@ function SellerDlgController($scope) {
 "use strict";
 
 angular.module("project3App").controller("SellersController",
-function SellersController($scope, AppResource) {
+function SellersController($scope, AppResource, centrisNotify, SellerDlg) {
 	// TODO: load data from AppResource! Also, add other methods, such as to
 	// add/update sellers etc.
 
@@ -250,15 +250,19 @@ function SellersController($scope, AppResource) {
 	});
 
 	$scope.onAddSeller = function onAddSeller() {
-		console.log("hey there");
-		/*SellerDlg.show().then(function(seller) {
+		SellerDlg.show().then(function(seller) {
 			AppResource.addSeller(seller).success(function(seller) {
 				var newSeller = seller;
-				$scope.sellers.push(seller);
+				console.log(seller);
+				//$scope.sellers.push(seller);
 			}).error(function() {
-				//centrisNotify.error("sellers.Messages.SaveFailed");
+				centrisNotify.error("sellers.Messages.SaveFailed");
 			});
-		});*/
+		});
+	};
+
+	$scope.onEditSeller = function onEditSeller(selectedUser) {
+
 	};
 });
 "use strict";
