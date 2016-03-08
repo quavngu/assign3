@@ -7,16 +7,25 @@
 	<link rel="stylesheet" href="styles/vendor.css">
 	<link rel="stylesheet" href="styles/app.css">
 </head>
-
 	<main class="container-fluid">
 		<div class="Main clearfix" ng-view id="content"></div>
 	</main>
 
 	<toaster-container></toaster-container>
 	<!-- inject:vendor:js -->
+	<script src="vendor/angular/angular.js"></script>
+	<script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+	<script src="vendor/angular-mocks/angular-mocks.js"></script>
+	<script src="vendor/angular-route/angular-route.js"></script>
+	<script src="vendor/angular-toastr/dist/angular-toastr.js"></script>
+	<script src="vendor/angular-translate/angular-translate.js"></script>
+	<script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="vendor/jquery/dist/jquery.js"></script>
+	<script src="vendor/lodash/lodash.js"></script>
 	<!-- endinject -->
 
 	<!-- inject:app:js -->
+	<script src="app.js"></script>
 	<!-- endinject -->
 
 	<!-- inject:templates:js -->
