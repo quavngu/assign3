@@ -5,15 +5,29 @@ function SellersController($scope, AppResource, centrisNotify, SellerDlg) {
 	// TODO: load data from AppResource! Also, add other methods, such as to
 	// add/update sellers etc.
 
+	$scope.DisplayAdd = true;
+	$scope.DisplayChange = true;
+	$scope.selectedUser = {
+		name: 		"",
+		category: 	"",
+		imagePath: 	""
+	};
+
 	AppResource.getSellers().success(function(sellers) {
 		$scope.sellers = sellers;
 	});
 
+	function getSelectedUser() {
+		return $scope.selectedUser;
+	}
+
 	$scope.onAddSeller = function onAddSeller() {
+		$scope.DisplayAdd = false;
+		$scope.DisplayChange = false;
 		SellerDlg.show().then(function(seller) {
 			AppResource.addSeller(seller).success(function(seller) {
-				var newSeller = seller;
-				console.log(seller);
+				$scope.DisplayAdd = true;
+				$scope.DisplayChange = true;
 				//$scope.sellers.push(seller);
 			}).error(function() {
 				centrisNotify.error("sellers.Messages.SaveFailed");
@@ -22,6 +36,16 @@ function SellersController($scope, AppResource, centrisNotify, SellerDlg) {
 	};
 
 	$scope.onEditSeller = function onEditSeller(selectedUser) {
-
+		$scope.selectedUser = selectedUser;
+		$scope.DisplayChange = false;
+		console.log(selectedUser.name);
+		SellerDlg.show().then(function(seller) {
+			AppResource.updateSeller(selectedUser.id, seller).success(function(seller) {
+				$scope.DisplayChange = true;
+				//$scope.sellers.push(seller);
+			}).error(function() {
+				centrisNotify.error("sellers.Messages.SaveFailed");
+			});
+		});
 	};
 });

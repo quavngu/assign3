@@ -2,10 +2,11 @@
 	<span translate="sellers.Name"></span>
 	<input types="text" ng-model="seller.name" />
 	<span translate="sellers.Category"></span>
-	<input types="text" ng-model="seller.category" />
+	<input types="text" ng-model="seller.category"  />
 	<span translate="sellers.Image"></span>
 	<input types="text" ng-model="seller.imagePath" />
 	<button class="btn btn-primary" ng-click="onOk()">
 		<span translate="sellers.Ok"></span>
 	</button>
+	<span class="error">{{errorMessage}}</span>
 </div>
