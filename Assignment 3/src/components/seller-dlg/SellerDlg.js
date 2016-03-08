@@ -1,6 +1,6 @@
-"use strict";
+ "use strict";
 
-angular.module("prject3App").factory("SellerDlg",
+angular.module("project3App").factory("SellerDlg",
 function SellerDlg($uibModal) {
 	return {
 		show: function() {
@@ -11,5 +11,5 @@ function SellerDlg($uibModal) {
 
 			return modalInstance.result;
 		}
-	}
+	};
 });

@@ -10,16 +10,14 @@ function SellersController($scope, AppResource) {
 	});
 
 	$scope.onAddSeller = function onAddSeller() {
-		SellerDlg.show().then(function(seller) {
+		console.log("hey there");
+		/*SellerDlg.show().then(function(seller) {
 			AppResource.addSeller(seller).success(function(seller) {
 				var newSeller = seller;
-				$scope.sellers.push(seller)
+				$scope.sellers.push(seller);
 			}).error(function() {
 				centrisNotify.error("sellers.Messages.SaveFailed");
 			});
-		});
-
-
-		
-	}
+		});*/
+	};
 });
