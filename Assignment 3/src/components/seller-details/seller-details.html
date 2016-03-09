@@ -20,7 +20,14 @@
 				<a href ng-click="tab = 2"><span translate="sellersdetails.TopTen"></span></a>
 			</li>
 		</ul>
-		<p ng-show="tab===1">Blaaaaaa</p>
-		<p ng-show="tab===2">Bluuuuuh</p>
+		<div ng-show="tab===1">
+			<div ng-controller="ProductTapController">
+				Blaaaaaahuhuhu
+				<button class="btn btn-primary" ng-click="test()" ng-	show="DisplayAdd">
+					test
+				</button>
+			</div>
+		</div>
+		<div ng-show="tab===2">Bluuuuuh</div>
 	</div>
 </div>
