@@ -28,7 +28,6 @@ function SellersController($scope, AppResource, centrisNotify, SellerDlg) {
 			AppResource.addSeller(seller).success(function(seller) {
 				$scope.DisplayAdd = true;
 				$scope.DisplayChange = true;
-				//$scope.sellers.push(seller);
 			}).error(function() {
 				centrisNotify.error("sellers.Messages.SaveFailed");
 			});
@@ -38,11 +37,13 @@ function SellersController($scope, AppResource, centrisNotify, SellerDlg) {
 	$scope.onEditSeller = function onEditSeller(selectedUser) {
 		$scope.selectedUser = selectedUser;
 		$scope.DisplayChange = false;
+		
 		console.log(selectedUser.name);
+		console.log(selectedUser.category);
+
 		SellerDlg.show().then(function(seller) {
 			AppResource.updateSeller(selectedUser.id, seller).success(function(seller) {
 				$scope.DisplayChange = true;
-				//$scope.sellers.push(seller);
 			}).error(function() {
 				centrisNotify.error("sellers.Messages.SaveFailed");
 			});
