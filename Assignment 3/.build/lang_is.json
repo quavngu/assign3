@@ -10,16 +10,21 @@
 			"SaveFailed": "Því miður tókst ekki að bæta við nýjum seljanda"
 		}
 	},
+	"NotificationTitle": "Title",
 	"sellers": {
 		"Title": "Seljendur",
 		"Name": "Nafn",
 		"Category": "Flokkur",
 		"Add": "Bæta við",
 		"Ok": "Í lagi",
+		"Fail": "Villa",
 		"Cancel": "Hætta",
 		"Image": "Mynd",
 		"Edit": "Breyta",
 		"Messages": {
+			"MissingName": "Nafn vantar",
+			"MissingCategory": "Nafn flokk",
+			"MissingImage": "Nafn mynd",
 			"LoadFailed": "Ekki tókst að sækja lista yfir seljendur",
 			"SaveSucceeded": "Nýjum seljanda hefur verið bætt við",
 			"SaveFailed": "Því miður tókst ekki að bæta við nýjum seljanda"
