@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module("project3App").controller("SellerDlgController",
-function SellerDlgController($scope) {
+angular.module("project3App").controller("SellerDetailsController",
+function SellerDetailsController($scope, AppResource) {
 
 });
