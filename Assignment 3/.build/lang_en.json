@@ -1,16 +1,20 @@
 {
-	"sellersdetails": {
+	"sellers": {
 		"Title": "Sellers List",
-		"Back": "Back",
 		"Name": "Name",
-		"AllProducts": "All Products",
-		"TopTen": "Top 10",
+		"Category": "Category",
+		"Add": "Add",
+		"Ok": "Ok",
+		"Cancel": "Cancel",
+		"Image": "Image",
+		"Edit": "Edit",
 		"Messages": {
 			"LoadFailed": "Failed to load the list of sellers",
 			"SaveSucceeded": "The seller has been added successfully",
 			"SaveFailed": "Unfortunately we could not add a new seller"
 		}
 	},
+<<<<<<< HEAD
 	"NotificationTitle": "Title",
 	"sellers": {
 		"Title": "Sellers List",
@@ -22,6 +26,13 @@
 		"Cancel": "Cancel",
 		"Image": "Image",
 		"Edit": "Edit",
+=======
+	"sellersdetails": {
+		"Title": "Sellers List",
+		"Name": "Name",
+		"AllProducts": "All Products",
+		"TopTen": "Top 10",
+>>>>>>> 4435bf97434772e1783ca0bc74a617e51815834d
 		"Messages": {
 			"LoadFailed": "Failed to load the list of sellers",
 			"SaveSucceeded": "The seller has been added successfully",

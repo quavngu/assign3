@@ -1,7 +1,6 @@
 {
 	"sellersdetails" : {
 		"Title":                     "Sellers List",
-		"Back":						 "Back",
 		"Name":                      "Name",
 		"AllProducts":				 "All Products",
 		"TopTen":					 "Top 10",

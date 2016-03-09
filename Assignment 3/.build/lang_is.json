@@ -1,16 +1,20 @@
 {
-	"sellersdetails": {
+	"sellers": {
 		"Title": "Seljendur",
-		"Back": "Til baka",
 		"Name": "Nafn",
-		"AllProducts": "Allar vörur",
-		"TopTen": "Topp 10",
+		"Category": "Flokkur",
+		"Add": "Bæta við",
+		"Ok": "Í lagi",
+		"Cancel": "Hætta",
+		"Image": "Mynd",
+		"Edit": "Breyta",
 		"Messages": {
 			"LoadFailed": "Ekki tókst að sækja lista yfir seljendur",
 			"SaveSucceeded": "Nýjum seljanda hefur verið bætt við",
 			"SaveFailed": "Því miður tókst ekki að bæta við nýjum seljanda"
 		}
 	},
+<<<<<<< HEAD
 	"NotificationTitle": "Title",
 	"sellers": {
 		"Title": "Seljendur",
@@ -22,6 +26,13 @@
 		"Cancel": "Hætta",
 		"Image": "Mynd",
 		"Edit": "Breyta",
+=======
+	"sellersdetails": {
+		"Title": "Seljendur",
+		"Name": "Nafn",
+		"AllProducts": "Allar vörur",
+		"TopTen": "Topp 10",
+>>>>>>> 4435bf97434772e1783ca0bc74a617e51815834d
 		"Messages": {
 			"MissingName": "Nafn vantar",
 			"MissingCategory": "Nafn flokk",
