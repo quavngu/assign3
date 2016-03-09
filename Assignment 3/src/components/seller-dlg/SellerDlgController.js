@@ -9,10 +9,16 @@ function SellerDlgController($scope) {
 	};
 	$scope.errorMessage = "";
 	//console.log(SellersController.getSelectedUser);
+	$scope.testVar = "hiii";
 
+	$scope.setSellerInfo = function setSellerInfo(n, c, i) {
+		$scope.seller.name = n;
+		$scope.seller.category = c;
+		$scope.seller.imagePath = i;
+	};
 
 	$scope.onOk = function onOk() {
-		// TODO: validation
+		// validations
 		if($scope.seller.name.length === 0) {
 			$scope.errorMessage = "Missing name!";
 			return;

@@ -5,8 +5,12 @@
 	<input types="text" ng-model="seller.category"  />
 	<span translate="sellers.Image"></span>
 	<input types="text" ng-model="seller.imagePath" />
+	<input types="text" ng-model="testVar"  />
 	<button class="btn btn-primary" ng-click="onOk()">
 		<span translate="sellers.Ok"></span>
+	</button>
+	<button class="btn btn-primary" ng-click="onCancel()">
+		<span translate="sellers.Cancel"></span>
 	</button>
 	<span class="error">{{errorMessage}}</span>
 </div>

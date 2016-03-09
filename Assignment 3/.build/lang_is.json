@@ -1,21 +1,22 @@
 {
-	"sellers": {
+	"sellersdetails": {
 		"Title": "Seljendur",
 		"Name": "Nafn",
-		"Category": "Flokkur",
-		"Add": "Bæta við",
-		"Ok": "Í lagi",
-		"Image": "Mynd",
-		"Edit": "Breyta",
 		"Messages": {
 			"LoadFailed": "Ekki tókst að sækja lista yfir seljendur",
 			"SaveSucceeded": "Nýjum seljanda hefur verið bætt við",
 			"SaveFailed": "Því miður tókst ekki að bæta við nýjum seljanda"
 		}
 	},
-	"sellersdetails": {
+	"sellers": {
 		"Title": "Seljendur",
 		"Name": "Nafn",
+		"Category": "Flokkur",
+		"Add": "Bæta við",
+		"Ok": "Í lagi",
+		"Cancel": "Hætta",
+		"Image": "Mynd",
+		"Edit": "Breyta",
 		"Messages": {
 			"LoadFailed": "Ekki tókst að sækja lista yfir seljendur",
 			"SaveSucceeded": "Nýjum seljanda hefur verið bætt við",

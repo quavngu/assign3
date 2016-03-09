@@ -21,7 +21,7 @@
 		<tbody>
 			<tr ng-repeat="s in sellers">
 				<td><img src="{{s.imagePath}}" alt="Image" height="42" width="42"></td>
-				<td>{{s.name}}</td>
+				<td><a class="sellerslistNames" ng-href="#/{{s.name}}">{{s.name}}</a></td>
 				<td>{{s.category}}</td>
 				<td>
 					<button class="btn btn-primary" ng-click="onEditSeller(s)" ng-model="selectedUser" ng-show="DisplayChange">
