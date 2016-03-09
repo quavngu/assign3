@@ -1,7 +1,10 @@
 {
 	"sellersdetails": {
 		"Title": "Seljendur",
+		"Back": "Til baka",
 		"Name": "Nafn",
+		"AllProducts": "Allar vörur",
+		"TopTen": "Topp 10",
 		"Messages": {
 			"LoadFailed": "Ekki tókst að sækja lista yfir seljendur",
 			"SaveSucceeded": "Nýjum seljanda hefur verið bætt við",
