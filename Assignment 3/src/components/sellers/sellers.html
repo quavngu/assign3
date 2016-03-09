@@ -4,22 +4,20 @@
 	</button>
 	<table>
 		<thead>
-			<tr>
+			<tr table-sort="name">
 				<th>
 					<span translate="sellers.Image"></span>
 				</th>
-				<th>
+				<th data-columnName="name">
 					<span translate="sellers.Name"></span>
 				</th>
-				<th>
+				<th data-columnName="category">
 					<span translate="sellers.Category"></span	>
-				</th>
-				<th>
 				</th>
 			</tr>
 		</thead>
 		<tbody>
-			<tr ng-repeat="s in sellers">
+			<tr ng-repeat="s in sellers | orderBy:predicate:reverse">
 				<td><img src="{{s.imagePath}}" alt="Image" height="42" width="42"></td>
 				<td>{{s.name}}</td>
 				<td>{{s.category}}</td>

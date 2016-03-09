@@ -564,6 +564,7 @@ angular.module("sharedServices").directive("tableSort", function () {
 
 		// Helper function:
 		function sortDown(sortType) {
+			console.log(scope[reverse] && scope[predicate] === sortType);
 			return scope[reverse] && scope[predicate] === sortType;
 		}
 
