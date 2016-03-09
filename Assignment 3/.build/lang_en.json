@@ -1,7 +1,10 @@
 {
 	"sellersdetails": {
 		"Title": "Sellers List",
+		"Back": "Back",
 		"Name": "Name",
+		"AllProducts": "All Products",
+		"TopTen": "Top 10",
 		"Messages": {
 			"LoadFailed": "Failed to load the list of sellers",
 			"SaveSucceeded": "The seller has been added successfully",
@@ -24,5 +27,10 @@
 			"SaveSucceeded": "The seller has been added successfully",
 			"SaveFailed": "Unfortunately we could not add a new seller"
 		}
+	},
+	"shared": {
+		"IS": "Icelandic",
+		"EN": "English",
+		"Back": "Back"
 	}
 }

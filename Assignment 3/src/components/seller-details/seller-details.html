@@ -1,5 +1,8 @@
 <div>
 	<div>
+		<a href="#/"><span translate="sellersdetails.Back"></span></a>
+	</div>
+	<div>
 		<img src="{{seller.imagePath}}" alt="Image" height="100" width="100">
 	</div>
 	<div>
@@ -11,10 +14,10 @@
 	<div>
 		<ul ng-init="tab = 1">
 			<li ng-class="{active:tab===1}">
-				<a href ng-click="tab = 1">Bla</a>
+				<a href ng-click="tab = 1"><span translate="sellersdetails.AllProducts"></span></a>
 			</li>
 			<li ng-class="{active:tab===2}">
-				<a href ng-click="tab = 2">Bluh</a>
+				<a href ng-click="tab = 2"><span translate="sellersdetails.TopTen"></span></a>
 			</li>
 		</ul>
 		<p ng-show="tab===1">Blaaaaaa</p>

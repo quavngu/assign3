@@ -19,15 +19,15 @@ function SellerDlgController($scope) {
 	$scope.onOk = function onOk() {
 		// validations
 		if($scope.seller.name.length === 0) {
-			$scope.errorMessage = "Missing name!";
+			centrisNotify.error("sellers.Messages.MissingName", "sellers.Fail");
 			return;
 		}
 		if($scope.seller.category.length === 0) {
-			$scope.errorMessage = "Missing category!";
+			centrisNotify.error("sellers.Messages.MissingCategory", "sellers.Fail");
 			return;
 		}
 		if($scope.seller.imagePath.length === 0){
-        	$scope.errorMessage = "Invalid image!";
+        	centrisNotify.error("sellers.Messages.MissingImage", "sellers.Fail");
         	return;
     	}
 

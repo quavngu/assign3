@@ -14,7 +14,6 @@ angular.module("project3App", ["ngRoute", "ui.bootstrap", "sharedServices", "pas
 		templateUrl: "components/shared/notFound.html"
 	});
 
-
 	$translateProvider.useStaticFilesLoader({
 		prefix: "lang_",
 		suffix: ".json"
