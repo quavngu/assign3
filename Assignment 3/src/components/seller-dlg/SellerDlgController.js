@@ -9,7 +9,6 @@ function SellerDlgController($scope) {
 	};
 	$scope.errorMessage = "";
 	//console.log(SellersController.getSelectedUser);
-	$scope.testVar = "hiii";
 
 	$scope.setSellerInfo = function setSellerInfo(n, c, i) {
 		$scope.seller.name = n;

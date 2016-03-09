@@ -6,8 +6,8 @@ angular.module("project3App", ["ngRoute", "ui.bootstrap", "sharedServices", "pas
 		controller: "SellersController",
 		templateUrl: "components/sellers/sellers.html"
 	})
-	.when("#/seller/:id", {
-		controller: "SellerDetailsController.js",
+	.when("/seller/:id", {
+		controller: "SellerDetailsController",
 		templateUrl: "components/seller-details/seller-details.html"
 	})
 	.otherwise ({
