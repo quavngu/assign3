@@ -28,8 +28,9 @@ function SellersController($scope, AppResource, centrisNotify, SellerDlg) {
 			AppResource.addSeller(seller).success(function(seller) {
 				$scope.DisplayAdd = true;
 				$scope.DisplayChange = true;
+				centrisNotify.success("sellers.Messages.SaveSucceeded", "sellers.Ok");
 			}).error(function() {
-				centrisNotify.error("sellers.Messages.SaveFailed");
+				centrisNotify.error("sellers.Messages.SaveFailed", "sellers.Fail");
 			});
 		});
 	};

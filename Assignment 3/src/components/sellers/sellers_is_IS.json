@@ -1,10 +1,12 @@
 {
+	"NotificationTitle" : "Title",
 	"sellers" : {
 		"Title":                     "Seljendur",
 		"Name":                      "Nafn",
 		"Category":				  	 "Flokkur",
 		"Add":						 "Bæta við",
 		"Ok":						 "Í lagi",
+		"Fail":						 "Villa",
 		"Cancel":					 "Hætta",
 		"Image":				     "Mynd",
 		"Edit":				    	 "Breyta",

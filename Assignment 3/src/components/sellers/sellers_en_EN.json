@@ -1,10 +1,12 @@
 {
+	"NotificationTitle" : "Title",
 	"sellers" : {
 		"Title":                     "Sellers List",
 		"Name":                      "Name",
 		"Category":				  	 "Category",
 		"Add":						 "Add",
 		"Ok":						 "Ok",
+		"Fail":						 "Fail",
 		"Cancel":					 "Cancel",
 		"Image":				     "Image",
 		"Edit":				    	 "Edit",
