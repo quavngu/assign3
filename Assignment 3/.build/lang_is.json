@@ -1,16 +1,4 @@
 {
-	"sellersdetails": {
-		"Title": "Seljendur",
-		"Back": "Til baka",
-		"Name": "Nafn",
-		"AllProducts": "Allar vörur",
-		"TopTen": "Topp 10",
-		"Messages": {
-			"LoadFailed": "Ekki tókst að sækja lista yfir seljendur",
-			"SaveSucceeded": "Nýjum seljanda hefur verið bætt við",
-			"SaveFailed": "Því miður tókst ekki að bæta við nýjum seljanda"
-		}
-	},
 	"sellers": {
 		"Title": "Seljendur",
 		"Name": "Nafn",
@@ -20,6 +8,17 @@
 		"Cancel": "Hætta",
 		"Image": "Mynd",
 		"Edit": "Breyta",
+		"Messages": {
+			"LoadFailed": "Ekki tókst að sækja lista yfir seljendur",
+			"SaveSucceeded": "Nýjum seljanda hefur verið bætt við",
+			"SaveFailed": "Því miður tókst ekki að bæta við nýjum seljanda"
+		}
+	},
+	"sellersdetails": {
+		"Title": "Seljendur",
+		"Name": "Nafn",
+		"AllProducts": "Allar vörur",
+		"TopTen": "Topp 10",
 		"Messages": {
 			"LoadFailed": "Ekki tókst að sækja lista yfir seljendur",
 			"SaveSucceeded": "Nýjum seljanda hefur verið bætt við",
