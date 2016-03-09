@@ -25,5 +25,10 @@
 			"SaveSucceeded": "The seller has been added successfully",
 			"SaveFailed": "Unfortunately we could not add a new seller"
 		}
+	},
+	"shared": {
+		"IS": "Icelandic",
+		"EN": "English",
+		"Back": "Back"
 	}
 }

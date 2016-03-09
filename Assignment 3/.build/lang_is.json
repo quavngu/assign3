@@ -25,5 +25,10 @@
 			"SaveSucceeded": "Nýjum seljanda hefur verið bætt við",
 			"SaveFailed": "Því miður tókst ekki að bæta við nýjum seljanda"
 		}
+	},
+	"shared": {
+		"IS": "Íslenska",
+		"EN": "Enska",
+		"Back": "Til baka"
 	}
 }
