@@ -25,29 +25,34 @@ function SellersController($scope, AppResource, centrisNotify, SellerDlg) {
 		$scope.DisplayAdd = false;
 		$scope.DisplayChange = false;
 		SellerDlg.show().then(function(seller) {
-			AppResource.addSeller(seller).success(function(seller) {
-				$scope.DisplayAdd = true;
-				$scope.DisplayChange = true;
-				centrisNotify.success("sellers.Messages.SaveSucceeded", "sellers.Ok");
-			}).error(function() {
+			$scope.DisplayAdd = true;
+			$scope.DisplayChange = true;
+			if (seller !== undefined) {
+				AppResource.addSeller(seller).success(function(seller) {
+					centrisNotify.success("sellers.Messages.SaveSucceeded", "sellers.Ok");
+				}).error(function() {
 				centrisNotify.error("sellers.Messages.SaveFailed", "sellers.Fail");
-			});
+				});
+			}
 		});
 	};
 
 	$scope.onEditSeller = function onEditSeller(selectedUser) {
 		$scope.selectedUser = selectedUser;
+		$scope.DisplayAdd = false;
 		$scope.DisplayChange = false;
 		
-		console.log(selectedUser.name);
-		console.log(selectedUser.category);
-
-		SellerDlg.show().then(function(seller) {
-			AppResource.updateSeller(selectedUser.id, seller).success(function(seller) {
-				$scope.DisplayChange = true;
-			}).error(function() {
-				centrisNotify.error("sellers.Messages.SaveFailed");
-			});
+		SellerDlg.show(selectedUser).then(function(seller) {
+			$scope.DisplayAdd = true;
+			$scope.DisplayChange = true;
+			if (seller !== undefined) {
+				AppResource.updateSeller(selectedUser.id, seller).success(function(seller) {
+					centrisNotify.success("sellers.Messages.UpdateSucceeded", "sellers.Ok");
+				}).error(function() {
+				centrisNotify.error("sellers.Messages.UpdateFailed");
+				});
+			}
 		});
 	};
+
 });

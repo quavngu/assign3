@@ -1,20 +1,22 @@
 "use strict";
 
 angular.module("project3App").controller("SellerDlgController",
-function SellerDlgController($scope, centrisNotify) {
-	$scope.seller = {
-		name: 		"",//$scope.selectedUser.name,
-		category: 	"",//$scope.selectedUser.category,
-		imagePath: 	""//$scope.selectedUser.imagePath
-	};
-	$scope.errorMessage = "";
+function SellerDlgController($scope, centrisNotify, modalParam) {
+	var sellerObj = modalParam.seller;
+	if (sellerObj !== undefined) {
+		$scope.seller = {
+			name: 		sellerObj.name,
+			category: 	sellerObj.category,
+			imagePath: 	sellerObj.imagePath
+		};
+	} else {
+		$scope.seller = {
+			name: 		"",
+			category: 	"",
+			imagePath: 	""
+		};
+	}
 	//console.log(SellersController.getSelectedUser);
-
-	$scope.setSellerInfo = function setSellerInfo(n, c, i) {
-		$scope.seller.name = n;
-		$scope.seller.category = c;
-		$scope.seller.imagePath = i;
-	};
 
 	$scope.onOk = function onOk() {
 		// validations
@@ -35,6 +37,6 @@ function SellerDlgController($scope, centrisNotify) {
 	};
 
 	$scope.onCancel = function onCancel() {
-		$scope.$dismiss();
+		$scope.$close(undefined);
 	};
 });
