@@ -20,14 +20,22 @@
 				<a href ng-click="tab = 2"><span translate="sellersdetails.TopTen"></span></a>
 			</li>
 		</ul>
+
 		<div ng-show="tab===1">
 			<div ng-controller="ProductTapController">
-				Blaaaaaahuhuhu
-				<button class="btn btn-primary" ng-click="test()" ng-	show="DisplayAdd">
-					test
+				<button class="btn btn-primary" ng-click="onAddProduct()">
+					<span translate="sellers.Add"></span>
 				</button>
+				<ul>
+					<li ng-repeat="product in sellerProducts">
+						<img src="{{product.imagePath}}" alt="img for id:{{product.id}}" height="100" width="100"> - {{product.name}} - {{product.price}}
+					</li>
+				</ul>
 			</div>
 		</div>
-		<div ng-show="tab===2">Bluuuuuh</div>
+
+		<div ng-show="tab===2">
+			Bluuuuuh
+		</div>
 	</div>
 </div>

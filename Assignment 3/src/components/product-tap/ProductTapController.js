@@ -1,19 +1,25 @@
 "use strict";
 
 angular.module("project3App").controller("ProductTapController",
-function ProductTapController($scope, AppResource, $routeParams) {
+function ProductTapController($scope, AppResource, centrisNotify, ProductDlg, $routeParams) {
 	$scope.id = $routeParams.id;
 	$scope.sellerProducts = [];
 	var sellerID = parseInt($scope.id);
+
 	AppResource.getSellerProducts(sellerID).success(function(sellerProducts) {
 		$scope.sellerProducts = sellerProducts;
 	});
 
-	$scope.test = function test() {
-		for(var i = 0; i < $scope.sellerProducts.length; ++i) {
-			var temp = $scope.sellerProducts[i];
-			console.log(temp);
-		}
-		console.log("test");
+	$scope.onAddProduct = function onAddProduct() {
+		ProductDlg.show().then(function(product) {
+			AppResource.addSellerProduct(sellerID, product).success(function() {
+				AppResource.getSellerProducts(sellerID).success(function(sellerProducts) {
+					$scope.sellerProducts = sellerProducts;
+				});
+				centrisNotify.success("sellers.Messages.SaveSucceeded", "sellers.Ok");
+			}).error(function() {
+				centrisNotify.error("sellers.Messages.SaveFailed", "sellers.Fail");
+			});
+		});
 	};
 });
