@@ -1,5 +1,5 @@
 <div>
-	<button class="btn btn-primary" ng-click="onAddSeller()" ng-show="DisplayAdd">
+	<button class="btn btn-primary" ng-click="onAddSeller()">
 		<span translate="sellers.Add"></span>
 	</button>
 	<table>
@@ -22,7 +22,7 @@
 				<td><a class="sellerslistNames" ng-href="#/seller/{{s.id}}">{{s.name}}</a></td>
 				<td>{{s.category}}</td>
 				<td>
-					<button class="btn btn-primary" ng-click="onEditSeller(s)" ng-model="selectedUser" ng-show="DisplayChange">
+					<button class="btn btn-primary" ng-click="onEditSeller(s)" ng-model="selectedUser">
 						<span translate="sellers.Edit"></span>
 					</button>
 				</td>

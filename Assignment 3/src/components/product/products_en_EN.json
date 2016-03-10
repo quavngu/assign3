@@ -1,0 +1,31 @@
+{
+	"NotificationTitle" : "Title",
+	"products" : {
+		"Title":                     "Products",
+		"Name":                      "Name",
+		"Category":				  	 "Category",
+		"Add":						 "Add",
+		"Ok":						 "Ok",
+		"Fail":						 "Error",
+		"Cancel":					 "Cancel",
+		"Price":				     "Price",
+		"QuantitySold":				 "QuantitySold",
+		"QuantityInStock":			 "QuantityInStock",
+		"Image":				     "Image",
+		"Edit":				    	 "Edit",
+		"Messages" : {			
+			"MissingName": 			 "Name missing",
+			"MissingCategory": 		 "Category missing",
+			"MissingImage": 		 "Image missing",
+			"MissingPrice": 		 "Price missing",
+			"QuantitySold":			 "Quantity sold missing",
+			"QuantityInStock":		 "Quantity in stock missing",
+			"ImagePath":			 "Image path missing",
+			"LoadFailed":            "Failed to load the list of sellers",
+			"SaveSucceeded":         "The seller has been added successfully",
+			"SaveFailed":            "Unfortunately we could not add a new seller",
+			"UpdateSucceeded":		 "Seller has been updated",
+			"UpdateFailed":			 "Unfortunately we could not update seller"
+		}
+	}
+}

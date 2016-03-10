@@ -5,8 +5,6 @@ function SellersController($scope, AppResource, centrisNotify, SellerDlg) {
 	// TODO: load data from AppResource! Also, add other methods, such as to
 	// add/update sellers etc.
 
-	$scope.DisplayAdd = true;
-	$scope.DisplayChange = true;
 	$scope.selectedUser = {
 		name: 		"",
 		category: 	"",
@@ -22,11 +20,7 @@ function SellersController($scope, AppResource, centrisNotify, SellerDlg) {
 	}
 
 	$scope.onAddSeller = function onAddSeller() {
-		$scope.DisplayAdd = false;
-		$scope.DisplayChange = false;
 		SellerDlg.show().then(function(seller) {
-			$scope.DisplayAdd = true;
-			$scope.DisplayChange = true;
 			if (seller !== undefined) {
 				AppResource.addSeller(seller).success(function(seller) {
 					centrisNotify.success("sellers.Messages.SaveSucceeded", "sellers.Ok");
@@ -39,12 +33,8 @@ function SellersController($scope, AppResource, centrisNotify, SellerDlg) {
 
 	$scope.onEditSeller = function onEditSeller(selectedUser) {
 		$scope.selectedUser = selectedUser;
-		$scope.DisplayAdd = false;
-		$scope.DisplayChange = false;
 		
 		SellerDlg.show(selectedUser).then(function(seller) {
-			$scope.DisplayAdd = true;
-			$scope.DisplayChange = true;
 			if (seller !== undefined) {
 				AppResource.updateSeller(selectedUser.id, seller).success(function(seller) {
 					centrisNotify.success("sellers.Messages.UpdateSucceeded", "sellers.Ok");

@@ -14,23 +14,23 @@ function ProductDlgController($scope, centrisNotify) {
 
 	$scope.onOk = function onOk() {
 		if($scope.product.name.length === 0) {
-			centrisNotify.error("sellers.Messages.MissingName", "sellers.Fail");
+			centrisNotify.error("products.Messages.MissingName", "products.Fail");
 			return;
 		}
-		if($scope.product.price < 1) {
-			centrisNotify.error("sellers.Messages.MissingName", "sellers.Fail");
+		if($scope.product.price < 0) {
+			centrisNotify.error("products.Messages.MissingPrice", "products.Fail");
 			return;
 		}
 		if($scope.product.quantitySold < 0) {
-			centrisNotify.error("sellers.Messages.MissingName", "sellers.Fail");
+			centrisNotify.error("products.Messages.QuantitySold", "products.Fail");
 			return;
 		}
 		if($scope.product.quantityInStock < 0) {
-			centrisNotify.error("sellers.Messages.MissingName", "sellers.Fail");
+			centrisNotify.error("products.Messages.QuantityInStock", "products.Fail");
 			return;
 		}
 		if($scope.product.imagePath.length === 0) {
-			centrisNotify.error("sellers.Messages.MissingName", "sellers.Fail");
+			centrisNotify.error("products.Messages.ImagePath", "products.Fail");
 			return;
 		}
 

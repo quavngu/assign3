@@ -1,0 +1,31 @@
+{
+	"NotificationTitle" : "Title",
+	"products" : {
+		"Title":                     "Vörur",
+		"Name":                      "Nafn",
+		"Category":				  	 "Flokkur",
+		"Add":						 "Bæta við",
+		"Ok":						 "Í lagi",
+		"Fail":						 "Villa",
+		"Cancel":					 "Hætta",
+		"Price":				     "Verð",
+		"QuantitySold":				 "Magn selt",
+		"QuantityInStock":			 "Magn á lager",
+		"Image":				     "Mynd",
+		"Edit":				    	 "Breyta",
+		"Messages" : {
+			"MissingName": 			 "Nafn vantar",
+			"MissingCategory": 		 "Flokk vantar",
+			"MissingImage": 		 "Mynd vantar",
+			"MissingPrice": 		 "Verð vantar",
+			"QuantitySold":			 "Magn selt vantar",
+			"QuantityInStock":		 "Magn á lager vantar",
+			"ImagePath":			 "Mynd vantar",
+			"LoadFailed":            "Ekki tókst að sækja lista yfir seljendur",
+			"SaveSucceeded":         "Nýjum seljanda hefur verið bætt við",
+			"SaveFailed":            "Því miður tókst ekki að bæta við nýjum seljanda",
+			"UpdateSucceeded":		 "Seljandi hefur verið uppfærður",
+			"UpdateFailed":			 "Því miður tókst ekki að uppfæra seljanda"
+		}
+	}
+}
