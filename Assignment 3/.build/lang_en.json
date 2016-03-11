@@ -9,8 +9,8 @@
 		"Fail": "Error",
 		"Cancel": "Cancel",
 		"Price": "Price",
-		"QuantitySold": "QuantitySold",
-		"QuantityInStock": "QuantityInStock",
+		"QuantitySold": "Quantity sold",
+		"QuantityInStock": "Quantity in stock",
 		"Image": "Image",
 		"Edit": "Edit",
 		"Messages": {
