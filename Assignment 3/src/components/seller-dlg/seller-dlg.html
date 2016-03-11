@@ -1,20 +1,28 @@
-<div>
+<div class="seller-dlg">
 	<div class="modal-header">
-		<h3 class="modal-title"></h3>
+		<h3 class="modal-title"><span translate="sellers.Add"></span> / <span translate="sellers.Edit"></span></h3>
 	</div>
 
 	<div class="modal-body">
 		<div>
-			<span translate="sellers.Name"></span>
-			<input types="text" ng-model="seller.name"/>
+			<div class="wrapper">
+				<div class="lhs"><span class="name" translate="sellers.Name"></span></div>
+				<div class="rhs"><input types="text" ng-model="seller.name"/></div>
+				<div class="uti"></div>
+			</div>
 		</div>
 		<div>
-			<span translate="sellers.Category"></span>
-			<input types="text" ng-model="seller.category"/>
+			<div class="wrapper">
+				<div class="lhs"><span class="category" translate="sellers.Category"></span></div>
+				<div class="rhs"><input types="text" ng-model="seller.category"/></div>
+				<div class="uti"></div>
+			</div>
 		</div>
 		<div>
-			<span translate="sellers.Image"></span>
-			<input types="text" ng-model="seller.imagePath"/>
+			<div class="wrapper">
+				<div class="lhs"><span class="image" translate="sellers.Image"></span></div>
+				<div class="rhs"><input types="text" ng-model="seller.imagePath"/></div>
+			</div>
 		</div>
 	</div>
 

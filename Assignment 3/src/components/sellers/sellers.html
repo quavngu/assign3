@@ -1,30 +1,29 @@
-<div>
-	<button class="btn btn-primary" ng-click="onAddSeller()">
-		<span translate="sellers.Add"></span>
-	</button>
+<div class="sellers">
+	<div class="addButton">
+	<a href="" ng-click="onAddSeller()"><span class="textSpan" translate="sellers.Add"></span><span class="glyphicon glyphicon-plus"></span></a>
+	</div>
 	<table>
 		<thead>
 			<tr table-sort="name">
 				<th>
-					<span translate="sellers.Image"></span>
 				</th>
-				<th data-columnName="name">
+				<th class="name" data-columnName="name">
 					<span translate="sellers.Name"></span>
 				</th>
-				<th data-columnName="category">
-					<span translate="sellers.Category"></span	>
+				<th class="category" data-columnName="category">
+					<span translate="sellers.Category"></span>
+				</th>
+				<th class="button">
 				</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr ng-repeat="s in sellers | orderBy:predicate:reverse">
-				<td><img src="{{s.imagePath}}" alt="Image" height="42" width="42"></td>
+				<td class="image"><img src="{{s.imagePath}}" alt="Image" height="50" width="50"></td>
 				<td><a class="sellerslistNames" ng-href="#/seller/{{s.id}}">{{s.name}}</a></td>
-				<td>{{s.category}}</td>
+				<td class="category">{{s.category}}</td>
 				<td>
-					<button class="btn btn-primary" ng-click="onEditSeller(s)" ng-model="selectedUser">
-						<span translate="sellers.Edit"></span>
-					</button>
+					<a href="" ng-click="onEditSeller(s)" ng-model="selectedUser"><span class="glyphicon glyphicon-pencil"></span></a>
 				</td>
 			</tr>
 		</tbody>

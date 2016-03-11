@@ -9,15 +9,17 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head>
+<body>
+	<h1 class="hometitle">Cloud Sales</h1>
 	<main class="container-fluid">
 		<div class="Main clearfix" ng-view id="content"></div>
 	</main>
 
 	<toaster-container></toaster-container>
 
-	<div ng-controller="TranslateController">
-		<a href="" ng-click="changeToIS()"><span translate="shared.IS"></span></a>
-		<a href="" ng-click="changeToEN()"><span translate="shared.EN"></span></a>
+	<div class="translate" ng-controller="TranslateController">
+		<a href="" ng-click="changeToIS()"><img src="http://www.sciencekids.co.nz/images/pictures/flags680/Iceland.jpg" alt="IS" height="25" width="35"/></a>
+		<a href="" ng-click="changeToEN()"><img src="http://www.sciencekids.co.nz/images/pictures/flags680/United_Kingdom.jpg" alt="EN" height="25" width="35"/></span></a>
 	</div>
 	<!-- inject:vendor:js -->
 	<script src="src/vendor/angular/angular.js"></script>
@@ -33,12 +35,12 @@
 	<!-- endinject -->
 
 	<!-- inject:app:js -->
-	<script src="scripts/app-ee23afbe.js"></script>
+	<script src="scripts/app-43ac0891.js"></script>
 	<script src="scripts/appconfig.js"></script>
 	<!-- endinject -->
 
 	<!-- inject:templates:js -->
-	<script src="scripts/templates-25673f29.js"></script>
+	<script src="scripts/templates-fdf52373.js"></script>
 	<!-- endinject -->
 </body>
 </html>

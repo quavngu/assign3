@@ -37,6 +37,6 @@ function SellerDlgController($scope, centrisNotify, modalParam) {
 	};
 
 	$scope.onCancel = function onCancel() {
-		$scope.$close(undefined);
+		$scope.$dismiss();
 	};
 });
