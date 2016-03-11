@@ -29,6 +29,9 @@
 				<ul>
 					<li ng-repeat="product in sellerProducts">
 						<img src="{{product.imagePath}}" alt="img for id:{{product.id}}" height="100" width="100"> - {{product.name}} - {{product.price}}
+						<button class="btn btn-primary" ng-click="onEditProduct(product)" ng-model="selectedProduct">
+						<span translate="products.Edit"></span>
+					</button>
 					</li>
 				</ul>
 			</div>

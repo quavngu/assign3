@@ -22,10 +22,10 @@
 			"QuantityInStock": "Magn á lager vantar",
 			"ImagePath": "Mynd vantar",
 			"LoadFailed": "Ekki tókst að sækja lista yfir seljendur",
-			"SaveSucceeded": "Nýjum seljanda hefur verið bætt við",
-			"SaveFailed": "Því miður tókst ekki að bæta við nýjum seljanda",
-			"UpdateSucceeded": "Seljandi hefur verið uppfærður",
-			"UpdateFailed": "Því miður tókst ekki að uppfæra seljanda"
+			"SaveSucceeded": "Ný vara hefur verið bætt við",
+			"SaveFailed": "Því miður tókst ekki að bæta við nýja vöru",
+			"UpdateSucceeded": "Vara hefur verið uppfærð",
+			"UpdateFailed": "Því miður tókst ekki að uppfæra vöruna"
 		}
 	},
 	"sellersdetails": {

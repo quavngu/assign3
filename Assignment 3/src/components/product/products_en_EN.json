@@ -22,10 +22,10 @@
 			"QuantityInStock":		 "Quantity in stock missing",
 			"ImagePath":			 "Image path missing",
 			"LoadFailed":            "Failed to load the list of sellers",
-			"SaveSucceeded":         "The seller has been added successfully",
-			"SaveFailed":            "Unfortunately we could not add a new seller",
-			"UpdateSucceeded":		 "Seller has been updated",
-			"UpdateFailed":			 "Unfortunately we could not update seller"
+			"SaveSucceeded":         "The product has been added successfully",
+			"SaveFailed":            "Unfortunately we could not add a new product",
+			"UpdateSucceeded":		 "Product has been updated",
+			"UpdateFailed":			 "Unfortunately we could not update product"
 		}
 	}
 }

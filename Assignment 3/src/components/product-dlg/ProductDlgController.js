@@ -1,14 +1,25 @@
 "use strict";
 
 angular.module("project3App").controller("ProductDlgController",
-function ProductDlgController($scope, centrisNotify) {
-	$scope.product = {
-		name: 				"",
-		price: 				0,
-		quantitySold: 		0,
-		quantityInStock: 	0,
-		imagePath: 			""
-	};
+function ProductDlgController($scope, centrisNotify, modalParam) {
+	var productObj = modalParam.product;
+	if(productObj !== undefined) {
+		$scope.product = {
+			name: 				productObj.name,
+			price: 				productObj.price,
+			quantitySold: 		productObj.quantitySold,
+			quantityInStock: 	productObj.quantityInStock,
+			imagePath: 			productObj.imagePath
+		};
+	} else {
+		$scope.product = {
+			name: 				"",
+			price: 				0,
+			quantitySold: 		0,
+			quantityInStock: 	0,
+			imagePath: 			""
+		};
+	}
 
 	$scope.errorMessage = "";
 
