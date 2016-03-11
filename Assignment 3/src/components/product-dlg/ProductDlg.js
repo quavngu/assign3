@@ -3,13 +3,20 @@
 angular.module("project3App").factory("ProductDlg",
 function ProductDlg($uibModal) {
 	return {
-		show: function() {
-			var modalInstance = $uibModal.open({
+		show: function(product) {
+			var result = $uibModal.open({
 				templateUrl: "components/product-dlg/product-dlg.html",
-				controller: "ProductDlgController"
+				controller: "ProductDlgController",
+				resolve: {
+					modalParam: function() {
+						return {
+							product: product
+						};
+					}
+				}
 			});
 
-			return modalInstance.result;
+			return result.result;
 		}
 	};
 });
