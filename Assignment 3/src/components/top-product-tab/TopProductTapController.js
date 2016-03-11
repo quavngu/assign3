@@ -31,10 +31,24 @@ function TopProductTapController($scope, AppResource, centrisNotify, ProductDlg,
 					sellerProducts.sort(compare);
 					$scope.sellerProducts = sellerProducts.slice(0, 10);
 				});
-				centrisNotify.success("sellers.Messages.SaveSucceeded", "sellers.Ok");
+				centrisNotify.success("products.Messages.SaveSucceeded", "products.Ok");
 			}).error(function() {
-				centrisNotify.error("sellers.Messages.SaveFailed", "sellers.Fail");
+				centrisNotify.error("products.Messages.SaveFailed", "products.Fail");
 			});
+		});
+	};
+
+	$scope.onEditProduct = function onEditProduct(selectedProduct) {
+		$scope.selectedProduct = selectedProduct;
+
+		ProductDlg.show(selectedProduct).then(function(product) {
+			if (product !== undefined) {
+				AppResource.updateSellerProduct(selectedProduct.id, product).success(function(product) {
+					centrisNotify.success("products.Messages.UpdateSucceeded", "products.Ok");
+				}).error(function() {
+					centrisNotify.error("products.Messages.UpdateFailed", "products.Fail");
+				});
+			}
 		});
 	};
 });
