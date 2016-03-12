@@ -39,6 +39,11 @@
 			"SaveFailed": "Því miður tókst ekki að bæta við nýjum seljanda"
 		}
 	},
+	"shared": {
+		"IS": "Íslenska",
+		"EN": "Enska",
+		"Back": "Til baka"
+	},
 	"sellers": {
 		"Title": "Seljendur",
 		"Name": "Nafn",
@@ -59,10 +64,5 @@
 			"UpdateSucceeded": "Seljandi hefur verið uppfærður",
 			"UpdateFailed": "Því miður tókst ekki að uppfæra seljanda"
 		}
-	},
-	"shared": {
-		"IS": "Íslenska",
-		"EN": "Enska",
-		"Back": "Til baka"
 	}
 }

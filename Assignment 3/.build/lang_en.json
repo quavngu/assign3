@@ -39,6 +39,11 @@
 			"SaveFailed": "Unfortunately we could not add a new seller"
 		}
 	},
+	"shared": {
+		"IS": "Icelandic",
+		"EN": "English",
+		"Back": "Back"
+	},
 	"sellers": {
 		"Title": "Sellers List",
 		"Name": "Name",
@@ -59,10 +64,5 @@
 			"UpdateSucceeded": "Seller has been updated",
 			"UpdateFailed": "Unfortunately we could not update seller"
 		}
-	},
-	"shared": {
-		"IS": "Icelandic",
-		"EN": "English",
-		"Back": "Back"
 	}
 }

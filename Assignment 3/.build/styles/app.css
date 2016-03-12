@@ -18,6 +18,9 @@ body .translate {
   padding-right: 25px;
   color: #51cecd;
 }
+.product img {
+  border-radius: 7%;
+}
 .product .productName {
   float: left;
   text-align: left;
@@ -38,6 +41,9 @@ body .translate {
   width: 30%;
   float: left;
   text-align: left;
+}
+.seller-details .lhs img {
+  border-radius: 7%;
 }
 .seller-details .rhs {
   width: 100%;
