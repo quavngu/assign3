@@ -29,6 +29,35 @@ body .translate {
   text-align: right;
 }
 
+.product-dlg {
+  color: #51cecd;
+}
+.product-dlg .name,
+.product-dlg .category,
+.product-dlg .image {
+  padding-right: 15%;
+}
+.product-dlg .wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+.product-dlg .lhs {
+  width: 15%;
+  float: left;
+}
+.product-dlg .rhs {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+.product-dlg .uti {
+  padding-bottom: 5%;
+}
+.product-dlg input {
+  width: 85%;
+}
+
 .seller-details {
   text-align: center;
 }
@@ -91,7 +120,7 @@ body .translate {
 }
 
 .seller-dlg {
-  color: #06b6ff;
+  color: #51cecd;
 }
 .seller-dlg .name,
 .seller-dlg .category,

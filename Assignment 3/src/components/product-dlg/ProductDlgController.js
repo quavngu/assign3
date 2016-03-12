@@ -40,10 +40,6 @@ function ProductDlgController($scope, centrisNotify, modalParam) {
 			centrisNotify.error("products.Messages.QuantityInStock", "products.Fail");
 			return;
 		}
-		if($scope.product.imagePath.length === 0) {
-			centrisNotify.error("products.Messages.ImagePath", "products.Fail");
-			return;
-		}
 
 		$scope.$close($scope.product);
 	};
