@@ -1,5 +1,5 @@
 body {
-  background: url("http://barnfestivalen.tiomedia.se/wp-content/uploads/2013/04/blue-cloud-background-blue2-photo-19029417-fanclubs.jpg") fixed;
+  background: url("http://eskipaper.com/images/cloud-background-6.jpg") fixed;
   background-size: 100% 100%;
 }
 body .hometitle {
@@ -10,6 +10,78 @@ body .hometitle {
 body .translate {
   text-align: center;
   padding-top: 3%;
+}
+
+.product {
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #51cecd;
+}
+.product .productName {
+  float: left;
+  text-align: left;
+}
+.product .productPrice {
+  text-align: right;
+}
+
+.seller-details {
+  text-align: center;
+}
+.seller-details .wrapper {
+  padding-top: 2%;
+  width: 500px;
+  margin: 0 auto;
+}
+.seller-details .lhs {
+  width: 30%;
+  float: left;
+  text-align: left;
+}
+.seller-details .rhs {
+  width: 100%;
+  padding-bottom: 170px;
+  text-align: right;
+  color: #51cecd;
+}
+.seller-details .name {
+  font-weight: bold;
+  font-size: 22px;
+}
+.seller-details .category {
+  font-size: 18px;
+}
+.seller-details .tabs {
+  float: clear;
+  margin: 0 auto;
+  width: 1000px;
+  text-align: left;
+}
+.seller-details ul {
+  margin: 0 auto;
+  padding: 0;
+}
+.seller-details li {
+  display: inline-block;
+  vertical-align: top;
+}
+.seller-details .textSpan {
+  font-size: 20px;
+  padding-right: 1%;
+  color: #51cecd;
+}
+.seller-details .textSpanEdit {
+  padding-right: 4%;
+}
+.seller-details .tab {
+  padding-top: 10px;
+}
+.seller-details .editButton {
+  text-align: center;
+}
+.seller-details a {
+  color: #51cecd;
 }
 
 .seller-dlg {
@@ -45,10 +117,10 @@ body .translate {
   text-align: center;
   margin: 0 auto;
   width: 40%;
-  color: white;
+  color: #51cecd;
 }
 .sellers table {
-  color: #337ab7;
+  color: #51cecd;
   padding-top: 10%;
   width: 100%;
 }
@@ -82,5 +154,8 @@ body .translate {
 }
 .sellers .textSpan {
   padding-right: 1%;
-  color: white;
+  color: #51cecd;
+}
+.sellers a {
+  color: #51cecd;
 }

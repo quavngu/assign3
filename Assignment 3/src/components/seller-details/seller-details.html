@@ -1,18 +1,22 @@
-<div>
+<div class="seller-details">
 	<div>
-		<a href="#/"><span translate="shared.Back"></span></a>
+		<a href="#/"><span class="glyphicon glyphicon-chevron-left"></span><span translate="shared.Back"></span></a>
 	</div>
-	<div>
-		<img src="{{seller.imagePath}}" alt="Image" height="100" width="100">
+	<div class="wrapper">
+		<div class="lhs">
+			<img src="{{seller.imagePath}}" alt="Image" height="170" width="170">
+		</div>
+		<div class="rhs">
+			<div class="name">
+				{{seller.name}}
+			</div>
+			<div class="category">
+				{{seller.category}}
+			</div>
+		</div>
 	</div>
-	<div>
-		{{seller.name}}
-	</div>
-	<div>
-		{{seller.category}}
-	</div>
-	<div>
-		<ul ng-init="tab = 1">
+	<div class="tabs">
+		<ul class="nav nav-tabs" ng-init="tab = 1">
 			<li ng-class="{active:tab===1}">
 				<a href ng-click="tab = 1"><span translate="sellersdetails.AllProducts"></span></a>
 			</li>
@@ -22,27 +26,21 @@
 		</ul>
 
 		<div ng-show="tab===1">
-			<div ng-controller="ProductTapController">
-				<button class="btn btn-primary" ng-click="onAddProduct()">
-					<span translate="sellers.Add"></span>
-				</button>
+			<div class="tab" ng-controller="ProductTapController">
+				<a href="" ng-click="onAddProduct()"><span class="textSpan" translate="sellers.Add"></span><span class="glyphicon glyphicon-plus"></span></a>
 				<ul>
 					<li ng-repeat="product in sellerProducts">
 						<div my-product id="{{product.id}}" name="{{product.name}}" price="{{product.price}}" quantitysold="{{product.quantitySold}}" imagepath="{{product.imagePath}}" quantitypnstock="{{product.quantityInStock}}">
 						</div>
-						<button class="btn btn-primary" ng-click="onEditProduct(product)" ng-model="selectedProduct">
-							<span translate="products.Edit"></span>
-						</button>
+						<div class="editButton"><a href="" ng-click="onEditProduct(product)" ng-model="selectedUser"><span class="textSpanEdit" translate="sellers.Edit"></span><span class="glyphicon glyphicon-pencil"></span></a></div>
 					</li>
 				</ul>
 			</div>
 		</div>
 
 		<div ng-show="tab===2">
-			<div ng-controller="TopProductTapController">
-				<button class="btn btn-primary" ng-click="onAddProduct()">
-					<span translate="sellers.Add"></span>
-				</button>
+			<div class="tab" ng-controller="TopProductTapController">
+				<a href="" ng-click="onAddProduct()"><span class="textSpan" translate="sellers.Add"></span><span class="glyphicon glyphicon-plus"></span></a>
 				<ul>
 					<li ng-repeat="product in sellerProducts">
 						<div my-product id="{{product.id}}" name="{{product.name}}" price="{{product.price}}" quantitysold="{{product.quantitySold}}" imagepath="{{product.imagePath}}" quantitypnstock="{{product.quantityInStock}}">
