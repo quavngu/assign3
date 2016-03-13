@@ -20,7 +20,8 @@
 			"SaveSucceeded":         "The seller has been added successfully",
 			"SaveFailed":            "Unfortunately we could not add a new seller",
 			"UpdateSucceeded":		 "Seller has been updated",
-			"UpdateFailed":			 "Unfortunately we could not update seller"
+			"UpdateFailed":			 "Unfortunately we could not update seller",
+			"Empty":				 "This seller has no product to show at this moment"
 		}
 	}
 }

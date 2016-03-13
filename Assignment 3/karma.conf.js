@@ -30,7 +30,8 @@ module.exports = function(config) {
       'src/shared/app.js',
       'src/shared/**/*.js',
       'src/app.js',
-      'src/components/**/*.js'
+      'src/components/**/*.js',
+	'src/vendor/angular-translate-loader-static-files/angular-translate-loader-static-files.js'
     ],
 
 

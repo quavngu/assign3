@@ -4,10 +4,14 @@ angular.module("project3App").controller("ProductTapController",
 function ProductTapController($scope, AppResource, centrisNotify, ProductDlg, $routeParams) {
 	$scope.id = $routeParams.id;
 	$scope.sellerProducts = [];
+	$scope.alerts = [];
 	var sellerID = parseInt($scope.id);
 
 	AppResource.getSellerProducts(sellerID).success(function(sellerProducts) {
 		$scope.sellerProducts = sellerProducts;
+		if ($scope.sellerProducts.length < 1) {
+			$scope.alerts.push({type: 'danger'});
+		}
 	});
 
 	$scope.onAddProduct = function onAddProduct() {
@@ -22,6 +26,10 @@ function ProductTapController($scope, AppResource, centrisNotify, ProductDlg, $r
 			});
 		});
 	};
+
+	$scope.closeAlert = function(index) {
+    	$scope.alerts.splice(index, 1);
+  	};
 
 	$scope.onEditProduct = function onEditProduct(selectedProduct) {
 		$scope.selectedProduct = selectedProduct;
