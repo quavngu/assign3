@@ -1,6 +1,6 @@
 <div class="seller-details">
 	<div>
-		<a href="#/"><span class="glyphicon glyphicon-chevron-left"></span><span translate="shared.Back"></span></a>
+		<a href="#/"><span class="backButton glyphicon glyphicon-chevron-left"></span><span translate="shared.Back"></span></a>
 	</div>
 	<div class="wrapper">
 		<div class="lhs">
@@ -25,14 +25,21 @@
 			</li>
 		</ul>
 
-		<div ng-show="tab===1">
+		<div ng-show="tab===1" class="col-sm-8 col-md-12 col-xs-6">
 			<div class="tab" ng-controller="ProductTapController">
 				<a href="" ng-click="onAddProduct()"><span class="textSpan" translate="sellers.Add"></span><span class="glyphicon glyphicon-plus"></span></a>
 				<ul>
 					<li ng-repeat="product in sellerProducts">
 						<div my-product id="{{product.id}}" name="{{product.name}}" price="{{product.price}}" quantitysold="{{product.quantitySold}}" imagepath="{{product.imagePath}}" quantitypnstock="{{product.quantityInStock}}">
 						</div>
-						<div class="editButton"><a href="" ng-click="onEditProduct(product)" ng-model="selectedUser"><span class="textSpanEdit" translate="sellers.Edit"></span><span class="glyphicon glyphicon-pencil"></span></a></div>
+						<div class="editButton">
+							<a href="" ng-click="onEditProduct(product)" ng-model="selectedUser">
+								<span class="textSpanEdit" translate="sellers.Edit">
+								</span>
+								<span class="glyphicon glyphicon-pencil">	
+								</span>
+							</a>
+						</div>
 					</li>
 				</ul>
 			</div>

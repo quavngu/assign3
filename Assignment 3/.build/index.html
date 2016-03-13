@@ -10,17 +10,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head>
 <body>
-	<h1 class="hometitle">Cloud Sales</h1>
+	<h1 class="hometitle"></h1>
+	<div class="translate" ng-controller="TranslateController">
+		<a href="" ng-click="changeToIS()"><img src="http://www.sciencekids.co.nz/images/pictures/flags680/Iceland.jpg" alt="IS" height="25" width="35"/></a>
+		<a href="" ng-click="changeToEN()"><img src="http://www.sciencekids.co.nz/images/pictures/flags680/United_Kingdom.jpg" alt="EN" height="25" width="35"/></span></a>
+	</div>
 	<main class="container-fluid">
 		<div class="Main clearfix" ng-view id="content"></div>
 	</main>
 
 	<toaster-container></toaster-container>
-
-	<div class="translate" ng-controller="TranslateController">
-		<a href="" ng-click="changeToIS()"><img src="http://www.sciencekids.co.nz/images/pictures/flags680/Iceland.jpg" alt="IS" height="25" width="35"/></a>
-		<a href="" ng-click="changeToEN()"><img src="http://www.sciencekids.co.nz/images/pictures/flags680/United_Kingdom.jpg" alt="EN" height="25" width="35"/></span></a>
-	</div>
 	<!-- inject:vendor:js -->
 	<script src="src/vendor/angular/angular.js"></script>
 	<script src="src/vendor/jquery/dist/jquery.js"></script>
@@ -35,12 +34,12 @@
 	<!-- endinject -->
 
 	<!-- inject:app:js -->
-	<script src="scripts/app-6c013d5b.js"></script>
+	<script src="scripts/app-83b8a113.js"></script>
 	<script src="scripts/appconfig.js"></script>
 	<!-- endinject -->
 
 	<!-- inject:templates:js -->
-	<script src="scripts/templates-affef0cf.js"></script>
+	<script src="scripts/templates-4daf3715.js"></script>
 	<!-- endinject -->
 </body>
 </html>

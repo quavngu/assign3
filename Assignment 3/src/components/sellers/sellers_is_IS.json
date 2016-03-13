@@ -14,6 +14,8 @@
 			"MissingName": 			 "Nafn vantar",
 			"MissingCategory": 		 "Flokk vantar",
 			"MissingImage": 		 "Mynd vantar",
+            "NameRangeExceeded":     "Nafn getur ekki verið lengra en 40 stafir",
+			"CategoryRangeExceeded": "Nafn á flokki getur ekki verið lengra en 30 stafir",
 			"LoadFailed":            "Ekki tókst að sækja lista yfir seljendur",
 			"SaveSucceeded":         "Nýjum seljanda hefur verið bætt við",
 			"SaveFailed":            "Því miður tókst ekki að bæta við nýjum seljanda",

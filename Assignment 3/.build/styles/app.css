@@ -8,8 +8,14 @@ body .hometitle {
   padding-bottom: 3%;
 }
 body .translate {
-  text-align: center;
-  padding-top: 3%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+html * {
+  color: #000 !important;
 }
 
 .product {
@@ -27,6 +33,10 @@ body .translate {
 }
 .product .productPrice {
   text-align: right;
+}
+.product:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .product-dlg {
@@ -65,6 +75,11 @@ body .translate {
   padding-top: 2%;
   width: 500px;
   margin: 0 auto;
+}
+.seller-details .backButton {
+  text-align: left;
+  padidng-top: 20px;
+  padding-left: 20px;
 }
 .seller-details .lhs {
   width: 30%;
@@ -164,6 +179,10 @@ body .translate {
 }
 .sellers tr {
   text-align: left;
+}
+.sellers tbody > tr:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .sellers .image {
   padding-right: 5%;

@@ -18,6 +18,7 @@
 			"MissingCategory": 		 "Flokk vantar",
 			"MissingImage": 		 "Mynd vantar",
 			"MissingPrice": 		 "Verð vantar",
+            "NameRangeExceeded":     "Nafn á vöru getur ekki verið lengra en 20 stafir",
 			"QuantitySold":			 "Magn selt vantar",
 			"QuantityInStock":		 "Magn á lager vantar",
 			"ImagePath":			 "Mynd vantar",
