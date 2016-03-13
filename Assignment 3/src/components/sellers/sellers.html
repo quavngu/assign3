@@ -1,6 +1,13 @@
 <div class="sellers">
-	<div class="addButton">
-	<a href="" ng-click="onAddSeller()"><span class="textSpan" translate="sellers.Add"></span><span class="glyphicon glyphicon-plus"></span></a>
+	<div>
+		<div class="searchlhs">
+			<span class="glyphicon glyphicon-search"></span>
+			<input type="text" class="searchBox" ng-model="searchBox">
+		</div>
+		<div class="addButton">
+			<a href="" ng-click="onAddSeller()"><span class="textSpan" translate="	sellers.Add"></span>
+			<span class="glyphicon glyphicon-plus"></span></a>
+		</div>
 	</div>
 	<table>
 		<thead>
@@ -18,7 +25,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr ng-repeat="s in sellers | orderBy:predicate:reverse">
+			<tr ng-repeat="s in sellers | orderBy:predicate:reverse | filter:searchBox">
 				<td class="image"><img src="{{s.imagePath}}" alt="Image" height="50" width="50"></td>
 				<td><a class="sellerslistNames" ng-href="#/seller/{{s.id}}">{{s.name}}</a></td>
 				<td class="category">{{s.category}}</td>
