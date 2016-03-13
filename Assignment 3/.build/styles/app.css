@@ -18,6 +18,27 @@ html * {
   color: #000 !important;
 }
 
+.product {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #51cecd;
+}
+.product img {
+  border-radius: 7%;
+}
+.product .productName {
+  float: left;
+  text-align: left;
+}
+.product .productPrice {
+  text-align: right;
+}
+.product:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .product-dlg {
   color: #51cecd;
 }
@@ -55,10 +76,16 @@ html * {
   width: 500px;
   margin: 0 auto;
 }
-.seller-details .backButton {
+.seller-details .back {
   text-align: left;
-  padidng-top: 20px;
-  padding-left: 20px;
+  float: left;
+}
+.seller-details .backButton {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
 }
 .seller-details .lhs {
   width: 30%;
@@ -111,27 +138,6 @@ html * {
 }
 .seller-details a {
   color: #51cecd;
-}
-
-.product {
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: #51cecd;
-}
-.product img {
-  border-radius: 7%;
-}
-.product .productName {
-  float: left;
-  text-align: left;
-}
-.product .productPrice {
-  text-align: right;
-}
-.product:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .seller-dlg {
@@ -191,8 +197,8 @@ html * {
   text-align: left;
 }
 .sellers tbody > tr:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 .sellers .image {
   padding-right: 5%;
