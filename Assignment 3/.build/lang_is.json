@@ -42,11 +42,6 @@
 			"Empty": "Þessi seljandi hefur engar vorur í augnablikinu"
 		}
 	},
-	"shared": {
-		"IS": "Íslenska",
-		"EN": "Enska",
-		"Back": "Til baka"
-	},
 	"sellers": {
 		"Title": "Seljendur",
 		"Name": "Nafn",
@@ -70,5 +65,10 @@
 			"UpdateFailed": "Því miður tókst ekki að uppfæra seljanda",
 			"Empty": "Þessi seljandi hefur engar vorur í augnablikinu"
 		}
+	},
+	"shared": {
+		"IS": "Íslenska",
+		"EN": "Enska",
+		"Back": "Til baka"
 	}
 }

@@ -42,11 +42,6 @@
 			"Empty": "This selles has no products to show at this moment"
 		}
 	},
-	"shared": {
-		"IS": "Icelandic",
-		"EN": "English",
-		"Back": "Back"
-	},
 	"sellers": {
 		"Title": "Sellers List",
 		"Name": "Name",
@@ -70,5 +65,10 @@
 			"UpdateFailed": "Unfortunately we could not update seller",
 			"Empty": "This seller has no product to show at this moment"
 		}
+	},
+	"shared": {
+		"IS": "Icelandic",
+		"EN": "English",
+		"Back": "Back"
 	}
 }
