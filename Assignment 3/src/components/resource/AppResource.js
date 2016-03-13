@@ -184,8 +184,8 @@ function AppResource() {
 					console.log(current);
 					current.product.name = product.name;
 					current.product.price = product.price;
-					current.product.quantitySold = product.quantitySold;
-					current.product.quantityInStock = product.quantityInStock;
+					current.product.quantitySold = 0;
+					current.product.quantityInStock = 0;
 					current.product.imagePath = product.imagePath;
 				}
 			}
