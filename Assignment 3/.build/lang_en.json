@@ -26,7 +26,8 @@
 			"SaveSucceeded": "The product has been added successfully",
 			"SaveFailed": "Unfortunately we could not add a new product",
 			"UpdateSucceeded": "Product has been updated",
-			"UpdateFailed": "Unfortunately we could not update product"
+			"UpdateFailed": "Unfortunately we could not update product",
+			"Empty": "This seller has no product at the moment"
 		}
 	},
 	"sellersdetails": {
@@ -37,7 +38,8 @@
 		"Messages": {
 			"LoadFailed": "Failed to load the list of sellers",
 			"SaveSucceeded": "The seller has been added successfully",
-			"SaveFailed": "Unfortunately we could not add a new seller"
+			"SaveFailed": "Unfortunately we could not add a new seller",
+			"Empty": "This selles has no products to show at this moment"
 		}
 	},
 	"sellers": {
@@ -60,7 +62,8 @@
 			"SaveSucceeded": "The seller has been added successfully",
 			"SaveFailed": "Unfortunately we could not add a new seller",
 			"UpdateSucceeded": "Seller has been updated",
-			"UpdateFailed": "Unfortunately we could not update seller"
+			"UpdateFailed": "Unfortunately we could not update seller",
+			"Empty": "This seller has no product to show at this moment"
 		}
 	},
 	"shared": {

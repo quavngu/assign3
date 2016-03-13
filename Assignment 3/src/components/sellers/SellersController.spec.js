@@ -1,41 +1,28 @@
 "use strict";
 
-describe("SellersController", function() {
+/*describe("SellersController", function() {
 	// TODO: add beforeEach/describe/it/etc. functions as appropriate!
-	var mockToastr = {
-		success: function success(message, title, options) {
-
-		},
-		error: function error(message, title, options) {
-
-		}
-	};
-
-	var mockTranslate = function mockTranslate(str, param) {
-	return {
-		then: function(fn) {
-			var msg = str;
-			if (param !== undefined) {
-				str = str + " " + param.value;
-			}
-			fn(str);
-			}
-		};
-	};
-
-	mockTranslate.instant = function instant(str) {
-		return str;
-	};
-
 	beforeEach(module("project3App"));
 
-	beforeEach(module(function($provide) {
-		$provide.value("toastr", mockToastr);
-		$provide.value("$translate", mockTranslate);
-	}));
+	var ctrl, scope, resource, mocules;
 
-	it("should be correctly defined", inject(function(SellersController) {
-		expect(SellersController).toBeDefined();
+	describe("SellersController", inject(function(AppResource, Modues) {
+
+		beforeEach(inject(function($controller, $rootScope, $modules) {
+				scope = $rootScope.$new();
+				resource = AppResource;
+				$modules = Modules;
+
+				ctrl = $controller("SellersController", {
+					$scope : scope,
+					AppResource : resource 
+				});
+			}));
+
+		it("should have SellersController be defined", function() {
+			expect(resource.getSellers).toBeDefined();
+		});
+
 	}));
 /*
 	var createSellerTest = {
@@ -47,5 +34,5 @@ describe("SellersController", function() {
 		beforeEach(inject(function($controller, $rootScope) {
 			spyOn(mockLocation, )
 		}));
-	});*/
-});
+	});
+});*/

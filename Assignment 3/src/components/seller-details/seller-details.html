@@ -42,6 +42,7 @@
 						</div>
 					</li>
 				</ul>
+				<uib-alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)"><span translate="sellersdetails.Messages.Empty"></span></uib-alert>
 			</div>
 		</div>
 

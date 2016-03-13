@@ -26,7 +26,8 @@
 			"SaveSucceeded":         "The product has been added successfully",
 			"SaveFailed":            "Unfortunately we could not add a new product",
 			"UpdateSucceeded":		 "Product has been updated",
-			"UpdateFailed":			 "Unfortunately we could not update product"
+			"UpdateFailed":			 "Unfortunately we could not update product",
+			"Empty": 				 "This seller has no product at the moment"
 		}
 	}
 }
