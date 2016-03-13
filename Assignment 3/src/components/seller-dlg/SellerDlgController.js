@@ -24,6 +24,14 @@ function SellerDlgController($scope, centrisNotify, modalParam) {
 			centrisNotify.error("sellers.Messages.MissingName", "sellers.Fail");
 			return;
 		}
+		if($scope.seller.name.length > 40){
+			centrisNotify.error("sellers.Messages.NameRangeExceeded", "sellers.Fail");
+			return;
+		}
+		if($scope.seller.category.length > 30){
+			centrisNotify.error("sellers.Messages.CategoryRangeExceeded", "sellers.Fail");
+			return;
+		}
 		if($scope.seller.category.length === 0) {
 			centrisNotify.error("sellers.Messages.MissingCategory", "sellers.Fail");
 			return;

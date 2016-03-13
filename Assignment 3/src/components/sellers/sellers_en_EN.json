@@ -14,6 +14,8 @@
 			"MissingName": 			 "Name missing",
 			"MissingCategory": 		 "Category missing",
 			"MissingImage": 		 "Image missing",
+			"NameRangeExceeded":     "Name can be 40 characters at most",
+			"CategoryRangeExceeded": "Category can be 30 characters at most",
 			"LoadFailed":            "Failed to load the list of sellers",
 			"SaveSucceeded":         "The seller has been added successfully",
 			"SaveFailed":            "Unfortunately we could not add a new seller",

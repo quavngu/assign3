@@ -28,6 +28,26 @@ function ProductDlgController($scope, centrisNotify, modalParam) {
 			centrisNotify.error("products.Messages.MissingName", "products.Fail");
 			return;
 		}
+		if($scope.product.price.length === 0)
+		{
+			centrisNotify.error("products.Messages.MissingPrice", "products.Fail");
+			return;
+		}
+		if($scope.product.imagePath.length === 0)
+		{
+			centrisNotify.error("products.Messages.MissingImagePath", "products.Fail");
+			return;
+		}
+		if($scope.product.name.length > 20)
+		{
+			centrisNotify.error("products.Messages.NameRangeExceeded", "products.Fail");
+			return;
+		}
+		if($scope.product.imagePath.length === 0)
+		{
+			centrisNotify.error("products.Messages.MissingImagePath", "products.Fail");
+			return;
+		}
 		if($scope.product.price < 0) {
 			centrisNotify.error("products.Messages.MissingPrice", "products.Fail");
 			return;

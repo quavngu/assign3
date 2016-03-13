@@ -18,6 +18,7 @@
 			"MissingCategory": 		 "Category missing",
 			"MissingImage": 		 "Image missing",
 			"MissingPrice": 		 "Price missing",
+			"NameRangeExceeded":     "Product name can be 20 characters at most",
 			"QuantitySold":			 "Quantity sold missing",
 			"QuantityInStock":		 "Quantity in stock missing",
 			"ImagePath":			 "Image path missing",
